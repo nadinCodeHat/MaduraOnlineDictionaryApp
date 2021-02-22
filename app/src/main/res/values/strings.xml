@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MaduraOnlineDictionaryApp</string>
+    <string name="get">Get</string>
+    <string name="enter_the_url">Enter the URL</string>
+    <string name="enter_an_english_word">Enter an English word</string>
+    <string name="translate">Translate</string>
 </resources>

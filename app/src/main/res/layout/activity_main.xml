@@ -6,45 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView3"
+    <EditText
+        android:id="@+id/keyword"
         android:layout_width="360dp"
         android:layout_height="41dp"
         android:layout_marginTop="16dp"
-        android:text="Enter the URL"
-        android:textSize="22dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
         android:gravity="fill_vertical"
+        android:hint="@string/enter_an_english_word"
+        android:singleLine="true"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/back"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/translateBtn"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Get"
+        android:layout_marginBottom="8dp"
+        android:width="140dp"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:onClick="getBtnClick"
+        android:text="@string/translate"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="22dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textDisplay"
+        app:layout_constraintEnd_toEndOf="@+id/keyword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/keyword"
+        app:layout_constraintTop_toBottomOf="@+id/keyword"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="360dp"
-        android:layout_height="681dp"
-        android:background="@drawable/back"
-        android:textSize="24dp"
-        android:layout_marginTop="4dp"
+        android:id="@+id/textDisplay"
+        android:layout_width="358dp"
+        android:layout_height="691dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
