@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        key_word = findViewById(R.id.keyword);
-        textView = findViewById(R.id.textDisplay);
+        key_word = (EditText)findViewById(R.id.keyword);
+        textView = (TextView)findViewById(R.id.textDisplay);
         translateBTN = (Button) findViewById(R.id.translateBtn);
         translateBTN.setOnClickListener(new View.OnClickListener() {
             @Override
