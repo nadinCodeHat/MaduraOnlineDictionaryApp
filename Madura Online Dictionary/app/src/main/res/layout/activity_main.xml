@@ -11,14 +11,14 @@
         android:id="@+id/keyword"
         android:layout_width="match_parent"
         android:layout_height="41dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/border"
         android:gravity="fill_vertical"
         android:hint="@string/enter_an_english_word"
         android:singleLine="true"
-        android:textSize="22sp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp" />
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/translateBtn"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/keyword"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="16dp"
         android:width="140dp"
         android:background="@color/purple_500"
@@ -39,12 +39,15 @@
 
     <TextView
         android:id="@+id/textDisplay"
-        android:layout_width="match_parent"
-        android:layout_height="659dp"
-        android:layout_margin="20dp"
-        android:textColor="@color/black"
+        android:layout_width="353dp"
+        android:layout_height="684dp"
         android:layout_below="@id/translateBtn"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/border"
+        android:textColor="@color/black"
         android:textSize="24sp" />
 
 </RelativeLayout>

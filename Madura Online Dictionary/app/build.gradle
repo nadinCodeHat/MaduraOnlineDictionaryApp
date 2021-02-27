@@ -26,7 +26,7 @@ android {
             variant ->
                 variant.outputs.each{
                     output ->
-                        def name = "MaduraOnlineDictionaryApp${variant.versionName}(${variant.versionCode}).apk"
+                        def name = "Madura Online Dictionary ${variant.versionName}(${variant.versionCode}).apk"
                         output.outputFileName=name
                 }
         }
